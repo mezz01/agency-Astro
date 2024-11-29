@@ -1,19 +1,42 @@
 ---
-import background from '../assets/background.svg';
-import work from '../assets/work.svg'
-import search from '../assets/search.svg'
+import background from "../assets/background.svg";
+import work from "../assets/work.svg";
+import search from "../assets/search.svg";
 ---
 
 <div id="container">
-	<main>
-		<section class="flex flex-col items-center" id="hero">
-			<h1 class="text-2xl tracking-wider lg:text-maint lg:tracking-widest">RANKET</h1>
-			<div class=" relative ">
-				<img class="h-20 w-20" id="background" src={search.src} alt="" fetchpriority="high" />
-				<h2 class="absolute">Automating SEO the right way</h2>
-			</div>
-			
-
-		</section>
-	</main>
+  <main>
+    <section class="flex flex-col items-center h-lvh" id="hero">
+      <h1
+        class="w-fit text-2xl tracking-wider md:text-5xl lg:text-maint lg:tracking-widest"
+      >
+        RANKET
+      </h1>
+      <img
+        class="h-64 w-64 md:h-96 md:w-96"
+        id="background"
+        src={search.src}
+        alt=""
+        fetchpriority="high"
+      />
+    </section>
+    <section
+      class="flex flex-col md:flex-row items-center justify-around m-5 h-lvh"
+      id="hero"
+    >
+      <div class="right-info flex flex-col justify-center gap-10 h-full mr-10">
+        <h1 class="text-xl lg:text-4xl">Results focused work</h1>
+        <h2 class="text-lg lg:text-2xl">Turn traffic into ROI</h2>
+        <p class="text-md">
+          Get results within the first month working with us, get a team of
+          ranking experts,to show in the first search and dominate the market
+        </p>
+      </div>
+      <img
+        class="work-wus h-64 w-64 md:h-96 md:w-96"
+        src={work.src}
+        fetchpriority="low"
+      />
+    </section>
+  </main>
 </div>
